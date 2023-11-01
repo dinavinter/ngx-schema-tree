@@ -1,0 +1,20 @@
+<fdp-table
+  [dataSource]="source"
+  selectionMode="multiple"
+  emptyTableMessage="No data found"
+  (rowSelectionChange)="onRowSelectionChange($event)"
+  [isTreeTable]="true"
+  relationKey="children"
+>
+  <fdp-table-toolbar
+    title="Schema Fields"
+    [hideItemCount]="false"
+    [hideSearchInput]="false"
+  >
+  </fdp-table-toolbar>
+
+  <fdp-column name="name" key="name" label="Name" align="start"> </fdp-column>
+
+  <fdp-column name="writeAccess" key="writeAccess" label="writeAccess">
+  </fdp-column>
+</fdp-table>
